@@ -2,7 +2,7 @@ package examen_21m_primo;
 
 import java.util.Scanner;
 
-public class Primo {
+public class SiEsPrimo {
 	
 	public static void main (String [] args) {
 		Scanner ent = new Scanner (System.in);
@@ -35,11 +35,16 @@ public class Primo {
 	        } else {
 	            primo = false;
 	        }
-	    }
+	    	}
+	    
+        if (primo) {
+            System.out.println("El número " + numero + " es primo.");
+        } else {
+            System.out.println("El número " + numero + " no es primo.");
+        }
+
+        System.out.println("Los divisores del " + numero + " son " + divisores);
+	   
 		}
 	}
-
-
-		
-
 
